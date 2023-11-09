@@ -1,0 +1,9 @@
+---
+ - name: Install apache
+   hosts: windows
+   tasks:
+     - name: Install apache
+       win_package:
+	 path: C:\path\to\httpd.msi
+	 product_id: '{product_id}'
+         arguments: '/qn'
