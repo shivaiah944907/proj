@@ -1,0 +1,8 @@
+---
+- hosts: win
+  tasks:
+  - name: Copy file
+    win_copy: 
+      src: home\1.html
+      dest: C:\ansible\
+      remote_src: yes
