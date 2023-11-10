@@ -1,8 +1,8 @@
 ---
-- hosts: 192.168.100.4
+- hosts: 127.0.0.1
   tasks:
   - name: Copy file
     win_copy: 
       src: \home\1.html
-      dest: C:\ansible\
+      dest: \home\gech
       remote_src: yes
