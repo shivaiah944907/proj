@@ -1,8 +1,8 @@
 ---
-- hosts: 192.168.100.3
+- hosts: 192.168.100.5
   tasks:
   - name: Copy file
     copy: 
       src: /home/1.html
-      dest: /home/gech
+      dest: /home/gech/copied
       remote_src: yes
