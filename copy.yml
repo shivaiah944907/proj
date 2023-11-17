@@ -1,9 +1,9 @@
 ---
-- hosts: 192.168.100.6
-  become: true
+- hosts: windows
+  gather_facts: true
   tasks:
   - name: Copy file
     copy: 
-      src: /home/1.html
-      dest: /home/gech/copied
+      src: /home/gech/env.yml
+      dest: c:\Ansible
       remote_src: yes
