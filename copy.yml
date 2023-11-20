@@ -5,5 +5,5 @@
   - name: Copy file
     copy: 
       src: /home/gech/env.yml
-      dest: c:\Ansible
+      dest: /home/new
       remote_src: yes
