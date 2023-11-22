@@ -1,9 +1,9 @@
 ---
-- hosts: 192.168.100.5
+- hosts: 192.168.100.6
   gather_facts: true
   tasks:
   - name: Copy file
     copy: 
       src: /home/gech/env.yml
-      dest: /home/new
+      dest: /home/gech/
       remote_src: yes
